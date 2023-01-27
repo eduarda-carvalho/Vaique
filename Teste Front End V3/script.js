@@ -197,7 +197,7 @@ function salvar(){
 }
 
 function deletar(botao){
-    let idDelete= botao.target.id
+    let idDelete= botao.currentTarget.id
     
     console.log('delete:' +idDelete)
     if (idDelete==''||idDelete==undefined){
