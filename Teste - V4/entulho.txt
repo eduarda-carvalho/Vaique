@@ -1,0 +1,156 @@
+// function salvar(){
+    // const dados= await pegarDados()
+    
+    // function alertar(){
+    //     alert(dados)
+    // }
+
+    // let nome= document.querySelector('#nome').value
+    // let data= new Date()
+    // let createdAt= data.toISOString
+    // let valorVenda= document.querySelector('#vlrVenda').value
+    // let referencia= document.querySelector('#referencia').value
+    // let unidade= document.querySelector('#unidade').value
+    // let fabricante= document.querySelector('#fabricante').value
+    // let estoque= document.querySelector('#estoque').value
+    // let imagem= document.querySelector('#imagem').value
+    
+    // alert(`Teste ${nome}, ${valorVenda}, ${referencia}, ${unidade}, ${fabricante}, ${estoque}, ${imagem}`)
+    // console.log(createdAt)
+    // let produto={
+    //     "id": '5',
+    //     "nome": nome ,
+    //     "createdAt":createdAt,
+    //     "valorVenda":valorVenda,
+    //     "referencia":referencia,
+    //     "unidade":unidade,
+    //     "fabricante":fabricante,
+    //     "estoque":estoque,
+    //     "imagem":imagem
+    // }
+    // alert(`teste aqio: ${produto.createdAt}`)
+    
+    // enviaDados(url, produtos)
+    // alert('enviado')
+
+    // // let produto={
+    // //     nome: ,
+    // //     valorVenda:0,
+    // //     referencia:'',
+    // //     unidade:'',
+    // //     fabricante:'',
+    // //     estoque:0,
+    // //     imagem:''
+    // // }
+
+    // // const valuesProduto= Object.create(produto)
+    // // produto.nome=nome
+    // // produto.valorVenda=valorVenda,
+    // // produto.referencia=referencia,
+    // // produto.unidade=unidade,
+    // // produto.fabricante=fabricante,
+    // // produto.estoque=estoque,
+    // // produto.imagem=imagem
+    // return produto
+//}
+
+
+
+
+// const produtoNovo={
+    //     nome: 'Teste Produto' ,
+    //     valorVenda:'12.00',
+    //     referencia: 'Teste',
+    //     unidadeMedida: 'UN',
+    //     fabricante:'empresa',
+    //     estoque:'10',
+    //     imagemProduto:''
+    // }
+
+    // function enviar(){
+
+
+//     console.log('chegou no salvar')
+//     const novoProduto= salvar()
+//     const options={
+//         method: 'POST',
+//         body: JSON.stringify(novoProduto),
+//         headers:{
+//             'Content-Type':'application/json'
+//         }
+//     }
+
+//     console.log('Enviando os produto novo:'+options)
+//     fetch(url, options).then(response=>{
+//         console.log(response)
+//     })
+    
+//     console.log(novoProduto)
+
+// }
+
+
+// function enviaDados(url, produto){
+//     alert('enviaDados')
+//     let request= new XMLHttpRequest()
+//     request.open("POST", url, true)
+//     request.setRequestHeader("Content-type", "aplication/json")
+//     request.send(JSON.stringify(produto))
+
+//     request.onload= function(){
+//         console.log('this '+this.responseText)
+//     }
+
+//     return request.responseText
+// }
+
+// function teste(){
+    
+//     //Criar div principal do produto
+//     let div= document.querySelector('.produtosCadastrados')
+//     let divNova= document.createElement('div')
+//     divNova.className='produto'
+//     div.appendChild(divNova)
+
+//     //Criar div para a imagem
+//     document.querySelector('.produto')
+//     let divImagem=document.createElement('div')
+//     divImagem.id='infoImagem'
+//     divNova.appendChild(divImagem)
+//     // divImagem.innerHTML=produtoCadastrado.imagem
+
+//     //Nome
+//     document.querySelector('.produto')
+//     let divNome=document.createElement('div')
+//     divNome.id='infoNomeProduto'
+//     divNova.appendChild(divNome)
+//     // divNome.innerHTML=dadosProds.nome
+
+//     //Referencia
+//     document.querySelector('.produto')
+//     let divReferencia=document.createElement('div')
+//     divReferencia.id='infoReferencia'
+//     divNova.appendChild(divReferencia)
+//     // divReferencia.innerHTML=infoProd.referencia
+
+//     //Valor de venda
+//     document.querySelector('.produto')
+//     let divVlrVenda=document.createElement('div')
+//     divVlrVenda.id='infoVlrVenda'
+//     divNova.appendChild(divVlrVenda)
+//     // divVlrVenda.innerHTML=infoProd.valorVenda
+
+//     //Fabricante
+//     document.querySelector('.produto')
+//     let divFabricante=document.createElement('div')
+//     divFabricante='infoFabricante'
+//     divNova.appendChild(divReferencia)
+//     // divFabircante.innerHTML=infoProd.fabricante
+
+//     //Estoque
+//     document.querySelector('.produto')
+//     let divEstoque=document.createElement('div')
+//     divEstoque.id='infoDelete'
+//     divNova.appendChild(divEstoque)
+//     // divEstoque.innerHTML=infoProd.estoque
+// }
