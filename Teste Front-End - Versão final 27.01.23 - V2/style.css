@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+/* GERAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container{
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+button{
+    cursor: pointer;
+}
+
+.inputBox label,
+.prodHeader h5{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* CADASTRO DO PRODUTO */
+
+.formulario{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1rem;
+}
+
+.formHeader{
+    box-sizing: border-box;
+    padding: 0.2rem;
+    margin-bottom: .3rem;
+}
+
+.formHeader h1{
+    font-size: 21px;
+    font-weight: 400;
+}
+.formHeader::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #A0AEC0;
+}
+
+.inputGroup{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid #A0AEC0;
+    /* justify-content:space-evenly; */
+    justify-content: center;
+    padding: 0.6rem;
+    border-radius: 6px;
+    gap:6%
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: .25rem;
+    width: calc(100%/3.7);
+    margin:0.5rem;
+}
+
+.inputBox input{
+    width: 100%;
+    margin: 0.1rem 0;
+    padding: 0.4rem;
+    border-radius: 6px;
+    background-color: #E2E8F0;
+    border: 1px solid #A0AEC0;
+}
+
+.inputBox input:hover{
+    background-color: #B8D6FF;
+}
+
+.formButtonsCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: calc(100%/3.7);
+    margin-bottom: .25rem;
+    margin:0.5rem;
+}
+.formButtonsCont button{
+    border-radius: 6px;
+    padding: 0.4rem;
+    color: white;
+    border: none;
+    margin: 0.5rem;
+}
+
+.formButtonsCont button:hover{
+    box-shadow: 1px 1px rgb(171, 171, 171);
+}
+
+#buttonLimpar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:#E53E3E;
+}
+
+#buttonSalvar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #38A169;
+}
+
+/* PRODUTOS CADASTRADOS */
+
+.catalogoProdutos{
+    /* min-height: 60%; */
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #A0AEC0;
+    border-radius: 6px;
+}
+
+.prodHeader{
+    display: flex;
+    color:#797C81;
+    height: 10%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    padding: .4rem;
+    border-bottom: 1px solid #A0AEC0;
+    }
+
+.prodHeader button{
+    color: #797C81;
+    border: none;
+    background-color: transparent;
+}
+
+.sortButton{
+    display: flex;
+    flex-direction: row;
+}
+
+#buttonImagem{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#buttonNomeProduto{
+    width:320px;
+    margin-right: .1rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#buttonReferencia{
+    width:110px;
+    margin-right: .1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#buttonVlrVenda{
+    width: 120px;
+    margin-right: .1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#buttonFabricante{
+    width:300px;
+    margin-right: .1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#buttonEstoque{
+    width:90px;
+    margin-right: .1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#orderButton{
+    width: 180px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+}
+
+
+.produtosCadastrados{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-y:scroll;
+    margin: 0 .2rem .2rem 0;
+}
+
+/* Produtos já cadastrados - Item*/ 
+
+/* Lista*/
+
+.produto{
+    display: flex;
+    background-color: #E2E8F0;
+    border-radius: 6px;
+    min-height: 78px;
+    height: 78px;
+    width: 95%;
+    padding: .4rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: .5rem;
+}
+
+.produto:hover{
+    background-color: #B8D6FF;
+}
+
+.infoProduto{
+    display: flex;
+    justify-content: fle;
+    align-items: center;
+    width: 90%;
+    margin: .4rem;
+    padding:.4rem;
+
+}
+
+#infoSelect{
+    width: 100px;
+    background-color: aqua;
+}
+
+#infoImagem{
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    background-color: #A0AEC0;
+    margin-right: .6rem;
+}
+
+#infoNomeProduto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 410px;
+    max-height: 50px;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow:clip;
+    margin-right: 1rem;
+}
+
+#infoReferencia{
+    width: 130px;
+    margin-right: .6rem;
+}
+
+#infoVlrVenda{
+    width: 100px;
+    margin-right: .6rem;
+    display: flex;
+    justify-content: center;
+}
+
+#infoFabricante{
+    width: 320px;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+#infoEstoque{
+    width: 70px;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#infoDelete{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 0;
+    height: 100%;
+    width:200px;
+    align-items: center;
+}
+
+#infoDelete button{
+    height: max-content;
+    font-size: 1.1rem;
+    color:#292929;
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+/* GRID*/
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 800px) {
+    .container{
+        display: block;
+    }
+    .inputBox{
+        width:calc(100%);
+    }
+    #buttonImagem{
+        display: none;
+    }
+    #infoImagem{
+        display: none;
+    }
+    #ocupaEspaco{
+        display: none;
+    }
+    
+}
