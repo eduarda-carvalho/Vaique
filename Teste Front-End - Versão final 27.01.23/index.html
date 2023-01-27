@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/cf89be2452.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Novo registro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <form onsubmit="salvar()">
+                <div class="formHeader">
+                    <h1>Novo registro</h1>
+                </div>
+                <div class="inputGroup">
+                    <div class="inputBox">
+                        <label for="nome">Nome</label>
+                        <input id="nome" type="text" name="nome" >
+                    </div>
+                    <div class="inputBox">
+                        <label for="vlrVenda">Valor de venda</label>
+                        <input id="vlrVenda" type="number" name="valorVenda" >
+                    </div>
+                    <div class="inputBox">
+                        <label for="referencia">Referência</label>
+                        <input id="referencia" type="text" name="referencia">
+                    </div>
+                    <div class="inputBox">
+                        <label for="unidade">Unidade de medida</label>
+                        <input id="unidade" type="text" name="unidadeMedida" >
+                    </div>
+                    <div class="inputBox">
+                        <label for="fabricante">Fabricante</label>
+                        <input id="fabricante" type="text" name="fabricante">
+                    </div>
+                    <div class="inputBox">
+                        <label for="estoque">Estoque</label>
+                        <input id="estoque" type="number" name="estoque" >
+                    </div>
+                    <div class="inputBox">
+                        <label for="imagem">Imagem do produto</label>
+                        <input id="imagem" type="link" name="imagemProduto">
+                    </div>
+                    <div class="inputBox" id="ocupaEspaco"></div>
+                    <div class="formButtonsCont">
+                        <button class="formButtons" id="buttonLimpar" type="button"  onclick="enviar()">Limpar campos</button>
+                        <button  class="formButtons" id="buttonSalvar" type="button" onclick="salvar()">Salvar</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+        <div class="catalogoProdutos">
+            <div class="prodHeader">
+                <h5 class='sortButton' id="buttonImagem">Imagem</h5>
+                <button class='sortButton' id="buttonNomeProduto">Nome do produto</button>
+                <button class='sortButton' id="buttonReferencia">Referencia</button>
+                <button class='sortButton' id="buttonVlrVenda">Valor de venda</button>
+                <button class='sortButton' id="buttonFabricante">Fabricante</button>
+                <button class='sortButton' id="buttonEstoque">Estoque</button>
+                <div class="sortButton" id="orderButton">
+                    <button class="orderButton" id="buttonLista" title="Lista"''><i class="fa-solid fa-list-ul"></i></button>
+                    <button class="orderButtton" id="buttonGrid" title="Grid"''><i class="fa-solid fa-chart-column"></i></button>
+                </div>
+            </div>
+            <div class="produtosCadastrados">
+
+                <!-- Produto teste -->
+                <!-- <div class="produto">
+                    <input type="checkbox">
+                    <div id="infoImagem"></div>
+                    <div id="infoNomeProduto">Nome do produto</div>
+                    <div id="infoReferencia">Ref</div>
+                    <div id="infoVlrVenda">100</div>
+                    <div id="infoFabricante">Empresa</div>
+                    <div id="infoEstoque">10 UN</div> -->
+                    <!-- <div id="infoDelete">
+                        <button id="buttonDelete">x</button>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
